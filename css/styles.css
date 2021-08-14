@@ -1,19 +1,42 @@
 :root {
   --main-title-color: #212121;
   --main-text-color: #757575;
-  --secpondary-text: #ffffff;
+  --secundary-text: #ffffff;
 }
 body {
-  background-color: #ffff;
-  font-family: roboto, sans-serif;
+  font-family: "roboto", sans-serif;
 }
-.index-h1 {
-  font-weight: 900;
-  font-size: 44px;
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.header-list-menu {
+  font-weight: 500;
+  font-size: 14px;
   line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+}
+.header-list-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.main-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
 
   color: #ffffff;
+}
+.hiden {
+  display: none;
 }
