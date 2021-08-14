@@ -6,48 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylessheet" href="./css/styles.css" />
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <!--верхний-блок-логотип-->
-        <nav>
-            <a href="">WebStudio</a>
-            <ul>
-                <li><a href="">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+        <nav class="navigator">
+            <a href="./index.html" class="logo">WebStudio</a>
+            <ul class="header-list-menu">
+                <li class="header-item liist"><a href="">Студия</a></li>
+                <li class="header-item liist"><a href="./portfolio.html">Портфолио</a></li>
+                <li class="header-item liist"><a href="">Контакты</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a href="mailto:exampe@gmai.com">exampe@gmai.com</a></li>
-            <li><a href="+380687131111">+380687131111</a></li>
+        <ul class="header-list-contacts">
+            <li class="email-list list"><a href=" mailto:exampe@gmai.com">exampe@gmai.com</a></li>
+            <li class="tel list"><a href="+380687131111">+380687131111</a></li>
         </ul>
     </header>
     <main>
         <!--button-->
         <section>
-            <h1>Эффективные решения для вашего бизнеса</h1>
-            <button type="button">Заказать услугу</button>
+            <h1 class="index-h1">Эффективные решения для вашего бизнеса</h1>
+            <button type="button" class="main-button">Заказать услугу</button>
         </section>
         <section>
             <h2>Наши реимущества</h2>
             <ul>
-                <li>
+                <li class="list">
                     <h3>Внимание к деталям</h3>
                     <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li>
+                <li class="list">
                     <h3>Пунктуальность</h3>
                     <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
+                </li class="list">
 
-                <li>
+                <li class="list">
                     <h3>Планирование</h3>
                     <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li>
+                <li class="list">
                     <h3>Современные технологии</h3>
                     <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
@@ -56,29 +64,34 @@
         <!--Чем занимаемся-->
         <section>
             <h2>Чем мы занимаемся</h2>
-            <ul>
-                <li><img src="./images/we-make/box1-min.jpg" alt="разрабатывает приложение" width="370" height="294">
+            <ul class="main-list-works">
+                <li class="list"><img src="./images/we-make/box1-min.jpg" alt="разрабатывает приложение" width="370"
+                        height="294">
                 </li>
-                <li><img src="./images/we-make/box2-min.jpg" alt="тестирует приложение" width="370" height="294"></li>
-                <li><img src="./images/we-make/box3-min.jpg" alt="дизайн приложения" width="370" height="294"></li>
+                <li class="list"><img src="./images/we-make/box2-min.jpg" alt="тестирует приложение" width="370"
+                        height="294"></li>
+                <li class="list"><img src="./images/we-make/box3-min.jpg" alt="дизайн приложения" width="370"
+                        height="294"></li>
             </ul>
         </section>
         <section>
             <!--ouer-team-->
             <h2>Наша команда</h2>
             <ul>
-                <li><img src="./images/team/img1-min.jpg" alt="фото сотрудника1" width="270" height="260" />
+                <li class="list"><img src="./images/team/img1-min.jpg" alt="фото сотрудника1" width="270"
+                        height="260" />
                     <h3>Игорь Демьяненко</h3>
                     <p>Product Designer</p>
                 </li>
-                <li><img src="./images/team/img2-min.jpg" alt="фото сотрудника2" width="270" height="260" />
+                <li class="list"><img src="./images/team/img2-min.jpg" alt="фото сотрудника2" width="270"
+                        height="260" />
                     <h3>Ольга Репина</h3>
                     <p>Frontend Developer</p>
                 </li>
                 <li><img src="./images/team/img3-min.jpg" alt="фото сотрудника3" width="270" height="260" />
                     <h3>Николай Тарасов</h3>
                     <p>Marketing</p>
-                </li>
+                </li class="list">
                 <li><img src="./images/team/img4-min.jpg" alt="фото сотрудника4" width="270" height="260" />
                     <h3>Михаил Ермаков</h3>
                     <p>UI Designer</p>
@@ -86,14 +99,15 @@
             </ul>
         </section>
     </main>
-    <footer>
-        <a href="">WebStudio</a>
+    <footer class="footer">
+        <a href="./index.html" class="footer-logo">WebStudio</a>
         <address>
-            <ul>
-                <li><a href=https://goo.gl/maps/AJ7KhFhHxw4ANXPTA target="_blank " rel="nofollow noopener noreferrer">г.
+            <ul class="footer-list-adress">
+                <li class="list"><a href=https://goo.gl/maps/AJ7KhFhHxw4ANXPTA target="_blank "
+                        rel="nofollow noopener noreferrer">г.
                         Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a href="mailto:exampe@gmai.com">exampe@gmai.com</a></li>
-                <li><a href="+380687131111">+380687131111</a></li>
+                <li class="list"><a href="mailto:exampe@gmai.com" class="exampe@gmai.com">exampe@gmai.com</a></li>
+                <li class="list"><a href="+380687131111">+380687131111</a></li>
             </ul>
         </address>
     </footer>
