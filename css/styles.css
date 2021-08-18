@@ -1,13 +1,21 @@
 :root {
+  --black-color: #000000;
+  --backgroun-footer-color: #2f303a; 
   --main-title-color: #212121;
   --main-text-color: #757575;
   --secundary-text: #ffffff;
+  --color-hover-focus: #188CE8;
+  --accent-color: #2196F3;
+  --rgba-color: rgba(255, 255, 255, 0.6);
   --bold-text: font-weight: 700;
   --Medium-text: font-weight: 500;
-  --color-hover-focus: #2196f3;
+  --font-size-16: font-size: 16px;
 }
 body {
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+  font-size: 14px;
+  font-weight: 400;
 }
 .list {
   list-style: none;
@@ -15,57 +23,59 @@ body {
 .link {
   text-decoration: none;
 }
-.link:hover {
+.link:hover, .link:focus{
   color: var(--color-hover-focus);
-}
-.link:focus {
- color: var(--color-hover-focus); 
-}
-.header {
-  background-color: var(--secundary-text);
 }
 /* logo */
 .logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--black-color);
 }
-
 .accent {
   color: var(--color-hover-focus);
-} /* href header */
-.header-href-menu {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  color: var(--main-title-color);
 }
-.header-href-contact {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
+ /* href header */
+.header-nav-href{
+font-weight: var(--Medium-text);
+line-height: 1.1;
+letter-spacing: 0.02em;
+color: var(--main-title-color);
+}
+.contact {
   color: var(--main-text-color);
 }
-.hiden-title {
-  display: none;
+.header-nav-menu .header-nav-href.current{
+  color: var(--accent-color);
+}
+ .portf-buttons .portf-btn.current {
+  color: var(--accent-color);
+ }
+/* main */
+.visually-hidden{
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
 }
 .index-btn {
-  background-color: var(--color-hover-focus);
-  font-weight: var(--bold-text);
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-  color: var(--secundary-text);
+font-weight: bold;
+font-size: 16px;
+line-height: 1.9;
+letter-spacing: 0.06em;
+border: 0;
+background-color: var(--accent-color);
 }
-.index-h1-button {
-  background-color: #2f303a;
+.index-section-button {
+  background-color: var(--backgroun-footer-color);
 }
-.index-h1 {
+.main-first-heading {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -74,29 +84,23 @@ body {
 }
 .portf-btn {
 font-weight: 500;
-font-size: 16px;
+font-size: var(--font-size-16);
 line-height: 1.6;
 letter-spacing: 0.03em;
+border: 0;
 color: var(--main-title-color);
 }
-.btn:hover {
+.btn:hover, .btn:focus {
   background-color: var(--color-hover-focus);
   color: var(--secundary-text);
 }
-.btn:focus {
-  background-color: var(--color-hover-focus);
-  color: var(--secundary-text);
-}
-.list-items {
+.main-list-items {
 font-weight: var(--bold-text);
-font-size: 14px;
 line-height: 1.1;
 letter-spacing: 0.03em;
-text-transform: uppercase;
 color: var(--main-title-color);
 }
 .text-item {
-font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;
 color: var(main-text-color);
@@ -110,7 +114,7 @@ color: var(--main-title-color);
 }
 .titles {
 font-weight: var(--Medium-text);
-font-size: 16px;
+font-size: var(--font-size-16);
 line-height: 1.2;
 letter-spacing: 0.03em;
 color: var(--main-title-color);
@@ -123,22 +127,25 @@ letter-spacing: 0.06em;
 color: var(--main-title-color);
 }
 .p-gallery {
-font-size: 16px;
+font-size: var(--font-size-16);
 line-height: 1.9;
 letter-spacing: 0.03em;
 color: var(--main-text-color);
 }
+
 /* footer */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--backgroun-footer-color);
 }
 .footer-item-contact {
-font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+color: var(--rgba-color);
 }
 .map {
+font-style: normal;
+line-height: 1.7;
+letter-spacing: 0.03em;
   color: var(--secundary-text);
 }
 .logo-footer {
