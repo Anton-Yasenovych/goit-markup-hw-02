@@ -134,7 +134,7 @@ color: var(--main-text-color);
 }
 
 /* footer */
-.footer {
+.footer-adress {
   background-color: var(--backgroun-footer-color);
 }
 .footer-item-contact {
